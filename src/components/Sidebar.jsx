@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { IoLibrary } from 'react-icons/io5';
 import { MdHomeFilled, MdSearch } from 'react-icons/md';
+import Playlists from './Playlists';
 
 export default function Sidebar() {
   return (
@@ -9,9 +10,7 @@ export default function Sidebar() {
       <div className="top_links">
         <div className="logo">
             <img src='https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png' alt="spotify logo"/>
-
         </div>
-      </div>
       <div>
         <ul>
             <li>
@@ -28,6 +27,8 @@ export default function Sidebar() {
             </li>
         </ul>
       </div>
+    </div>
+    <Playlists/>
     </Container>
   )
 }
