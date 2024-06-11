@@ -6,7 +6,7 @@ import { useStateProvider } from '../utils/StateProvider';
 
 export default function Navbar({navBackground}) {
     const [{userInfo}] = useStateProvider();
-    return <Container navBackground ={navBackground}>
+    return <Container $navBackground ={navBackground}>
         <div className="search_bar">
             <FaSearch/>
             <input type="text" placeholder='Artists, songs or podcasts'/>

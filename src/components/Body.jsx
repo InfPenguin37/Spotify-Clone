@@ -45,7 +45,7 @@ export default function Body({headerBackground}) {
   };
 
   return (
-    <Container headerBackground = {headerBackground}>
+    <Container $headerBackground = {headerBackground}>
       {
         selectedPlaylist && (
           <>
