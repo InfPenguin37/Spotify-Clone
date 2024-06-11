@@ -24,13 +24,17 @@ export default function Playlists() {
         };
         getPlaylistData();
     }, [token, dispatch])
+
+    const chnagePlaylist = (selectedPlaylistID)=>{
+        dispatch({type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistID})
+    };
   return (
     <Container>
         <ul>
             {
                 playlists.map(({name, id})=>{
                     return (
-                        <li key={id}>{name}</li>
+                        <li key={id} onClick={() => chnagePlaylist(id)}>{name}</li>
                     )
                 })
                 
